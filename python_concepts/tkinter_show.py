@@ -5,7 +5,7 @@ import sys
 window = tkinter.Tk(className="Show")
 
 image = Image.open(sys.argv[1])
-image = image.resize((1000, 800), Image.ANTIALIAS)
+image = image.resize((1000, 800), Image.LANCZOS)
 canvas = tkinter.Canvas(window, width=image.size[0], height=image.size[1])
 canvas.pack()
 image_tk = ImageTk.PhotoImage(image)
