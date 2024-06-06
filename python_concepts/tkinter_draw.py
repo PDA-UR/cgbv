@@ -21,7 +21,7 @@ def on_mouse_up(event):
 
 def on_mouse_drag(event):
     # print("move at: ", event.x, event.y)
-    canvas.create_rectangle(event.x, event.y, event.x, event.y)
+    canvas.create_rectangle(event.x, event.y, event.x, event.y, fill='red', outline='blue')
 
 
 # see https://python-course.eu/tkinter_events_binds.php for more events
